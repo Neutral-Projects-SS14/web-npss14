@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPSS14</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="diagonal-line-top">
+        <div class="inner-stripes"></div>
+    </div>
+    
+    <section>
+        <div id="popup">
+            <label for="text">CKEY:</label>
+            <input type="text" id="text" value="">
+        
+            <label for="options">Выберите опцию:</label>
+            <select id="options">
+                <option value="add">Добавить</option>
+                <option value="modify">Изменить</option>
+                <option value="delete">Убрать</option>
+            </select>
+        
+            <label for="reason">Причина:</label>
+            <textarea id="reason" rows="5" placeholder="Введите причину"></textarea>
+        
+            <button onclick="applyChanges()">Далее</button>
+        </div>
+        
+        <div class="diagonal-line-bottom">
+            <div class="inner-stripes"></div>
+        </div>
+        
+        <script src="script.js"></script>
+    </section>
+</body>
+</html>
